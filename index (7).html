@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budget Saudi Arabia | Car Rental Riyadh</title>
+<meta name="description" content="Budget Saudi Arabia - Car Rental in Riyadh. Daily, Weekly and Monthly Rentals.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#0b1020;color:#fff;line-height:1.6}
+header{position:fixed;top:0;width:100%;background:#111827;padding:15px 5%;display:flex;justify-content:space-between;z-index:999}
+.logo{font-size:24px;font-weight:bold;color:#f59e0b}
+nav a{color:#fff;text-decoration:none;margin:0 10px}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('hero.jpg') center/cover;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero h1{font-size:56px}
+.btn{display:inline-block;background:#f59e0b;color:#000;padding:14px 24px;text-decoration:none;border-radius:8px;margin:8px}
+section{padding:90px 5%}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:#111827;padding:20px;border-radius:12px}
+footer{background:#111827;padding:30px;text-align:center}
+.lang-btn{cursor:pointer}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px 20px;border-radius:50px;text-decoration:none}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">Budget Saudi Arabia</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#fleet">Fleet</a>
+<a href="#contact">Contact</a>
+<span class="lang-btn" onclick="toggleLang()">AR | EN</span>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<h1 data-en="Premium Car Rental" data-ar="تأجير سيارات فاخر">Premium Car Rental</h1>
+<p data-en="Reliable vehicles in Riyadh" data-ar="سيارات موثوقة في الرياض">Reliable vehicles in Riyadh</p>
+<a class="btn" href="tel:+966536276946">Call Now</a>
+<a class="btn" href="https://wa.me/966536276946">WhatsApp</a>
+</div>
+</section>
+
+<section id="about">
+<h2 data-en="About Us" data-ar="من نحن">About Us</h2>
+<p data-en="Budget Saudi Arabia provides daily, weekly and monthly rentals." data-ar="توفر بدجت السعودية تأجير السيارات اليومي والأسبوعي والشهري.">
+Budget Saudi Arabia provides daily, weekly and monthly rentals.
+</p>
+</section>
+
+<section id="fleet">
+<h2 data-en="Our Fleet" data-ar="أسطول السيارات">Our Fleet</h2>
+<div class="grid">
+<div class="card"><h3>SUV</h3><p>Toyota Land Cruiser</p></div>
+<div class="card"><h3>Luxury</h3><p>BMW Series</p></div>
+<div class="card"><h3>Economy</h3><p>Fuel Efficient Cars</p></div>
+</div>
+</section>
+
+<section>
+<h2 data-en="Services" data-ar="الخدمات">Services</h2>
+<div class="grid">
+<div class="card">Daily Rental</div>
+<div class="card">Weekly Rental</div>
+<div class="card">Monthly Rental</div>
+<div class="card">Airport Pickup</div>
+</div>
+</section>
+
+<section id="contact">
+<h2 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h2>
+<p>+966 53 627 6946</p>
+<p>2222 Ishiblia 7577, Al Sahaba Rd, Riyadh 13226, Saudi Arabia</p>
+</section>
+
+<footer>
+<p>© Budget Saudi Arabia</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/966536276946">WhatsApp</a>
+
+<script>
+let ar=false;
+function toggleLang(){
+ar=!ar;
+document.documentElement.dir=ar?'rtl':'ltr';
+document.querySelectorAll('[data-en]').forEach(el=>{
+el.innerText=ar?el.dataset.ar:el.dataset.en;
+});
+}
+</script>
+
+</body>
+</html>
