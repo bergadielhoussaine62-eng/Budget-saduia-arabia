@@ -1,97 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Budget Saudi Arabia | Car Rental Riyadh</title>
-<meta name="description" content="Budget Saudi Arabia - Car Rental in Riyadh. Daily, Weekly and Monthly Rentals.">
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Arial,sans-serif;background:#0b1020;color:#fff;line-height:1.6}
-header{position:fixed;top:0;width:100%;background:#111827;padding:15px 5%;display:flex;justify-content:space-between;z-index:999}
-.logo{font-size:24px;font-weight:bold;color:#f59e0b}
-nav a{color:#fff;text-decoration:none;margin:0 10px}
-.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('hero.jpg') center/cover;display:flex;align-items:center;justify-content:center;text-align:center}
-.hero h1{font-size:56px}
-.btn{display:inline-block;background:#f59e0b;color:#000;padding:14px 24px;text-decoration:none;border-radius:8px;margin:8px}
-section{padding:90px 5%}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:#111827;padding:20px;border-radius:12px}
-footer{background:#111827;padding:30px;text-align:center}
-.lang-btn{cursor:pointer}
-.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:#fff;padding:15px 20px;border-radius:50px;text-decoration:none}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Car Rental - Riyadh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+        body { font-family: 'Tajawal', sans-serif; }
+    </style>
 </head>
-<body>
+<body class="bg-gray-50 text-gray-800">
 
-<header>
-<div class="logo">Budget Saudi Arabia</div>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#fleet">Fleet</a>
-<a href="#contact">Contact</a>
-<span class="lang-btn" onclick="toggleLang()">AR | EN</span>
-</nav>
-</header>
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2 space-x-reverse">
+                <span class="text-2xl font-black text-orange-600">Budget</span>
+                <span class="text-sm font-bold text-blue-900 border-r border-gray-300 pr-2 mr-2">فرع إشبيلية</span>
+            </div>
+            <a href="https://wa.me/966536276946" class="bg-green-600 hover:bg-green-700 text-white font-bold px-4 py-2 rounded-lg text-sm flex items-center gap-2 transition">
+                <span>تواصل معنا</span>
+            </a>
+        </div>
+    </header>
 
-<section class="hero" id="home">
-<div>
-<h1 data-en="Premium Car Rental" data-ar="تأجير سيارات فاخر">Premium Car Rental</h1>
-<p data-en="Reliable vehicles in Riyadh" data-ar="سيارات موثوقة في الرياض">Reliable vehicles in Riyadh</p>
-<a class="btn" href="tel:+966536276946">Call Now</a>
-<a class="btn" href="https://wa.me/966536276946">WhatsApp</a>
-</div>
-</section>
+    <!-- Hero Section -->
+    <section class="relative bg-blue-900 text-white py-20 px-4 bg-gradient-to-tr from-blue-950 to-blue-800 overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="bg-orange-500 text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">الرياض - حي إشبيلية</span>
+            <h1 class="text-3xl md:text-5xl font-extrabold mt-4 mb-6 leading-tight">احجز سيارتك المفضلة الآن براحة تامة</h1>
+            <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-8">خدمة متميزة على مدار 24 ساعة في فرع طريق الصحابة. أسطول فاخر وحديث يلبي كافة تطلعاتك.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#fleet" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-xl transition shadow-lg text-base">تصفح السيارات المتاحة</a>
+                <a href="https://wa.me/966536276946" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-bold px-8 py-3 rounded-xl transition text-base">موقع الفرع على الخريطة</a>
+            </div>
+        </div>
+    </section>
 
-<section id="about">
-<h2 data-en="About Us" data-ar="من نحن">About Us</h2>
-<p data-en="Budget Saudi Arabia provides daily, weekly and monthly rentals." data-ar="توفر بدجت السعودية تأجير السيارات اليومي والأسبوعي والشهري.">
-Budget Saudi Arabia provides daily, weekly and monthly rentals.
-</p>
-</section>
+    <!-- Features Section -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4 bg-gray-50 rounded-xl">
+                <div class="text-2xl mb-1">⏰</div>
+                <h3 class="font-bold text-gray-900">خدمة 24 ساعة</h3>
+                <p class="text-xs text-gray-500 mt-1">مستعدون لخدمتكم دائماً</p>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-xl">
+                <div class="text-2xl mb-1">✨</div>
+                <h3 class="font-bold text-gray-900">سيارات حديثة</h3>
+                <p class="text-xs text-gray-500 mt-1">نظافة وأداء عالي</p>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-xl">
+                <div class="text-2xl mb-1">🛡️</div>
+                <h3 class="font-bold text-gray-900">تأمين شامل</h3>
+                <p class="text-xs text-gray-500 mt-1">قيادة آمنة وراحة بال</p>
+            </div>
+            <div class="p-4 bg-gray-50 rounded-xl">
+                <div class="text-2xl mb-1">⚡</div>
+                <h3 class="font-bold text-gray-900">إجراءات سريعة</h3>
+                <p class="text-xs text-gray-500 mt-1">تسليم واستلام في دقائق</p>
+            </div>
+        </div>
+    </section>
 
-<section id="fleet">
-<h2 data-en="Our Fleet" data-ar="أسطول السيارات">Our Fleet</h2>
-<div class="grid">
-<div class="card"><h3>SUV</h3><p>Toyota Land Cruiser</p></div>
-<div class="card"><h3>Luxury</h3><p>BMW Series</p></div>
-<div class="card"><h3>Economy</h3><p>Fuel Efficient Cars</p></div>
-</div>
-</section>
+    <!-- Fleet / Cars Section -->
+    <section id="fleet" class="py-16 max-w-7xl mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900">أسطول السيارات الفاخرة والحديثة</h2>
+            <p class="text-gray-600 mt-2">اختر السيارة المناسبة لك وابدأ الحجز مباشرة عبر الواتساب</p>
+        </div>
 
-<section>
-<h2 data-en="Services" data-ar="الخدمات">Services</h2>
-<div class="grid">
-<div class="card">Daily Rental</div>
-<div class="card">Weekly Rental</div>
-<div class="card">Monthly Rental</div>
-<div class="card">Airport Pickup</div>
-</div>
-</section>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Car 1: BMW Sedan -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 transition hover:shadow-xl flex flex-col justify-between">
+                <div class="p-6">
+                    <span class="bg-blue-50 text-blue-700 text-xs font-bold px-2.5 py-1 rounded-md">سيدان فاخرة</span>
+                    <h3 class="text-xl font-bold mt-2 text-gray-900">بي إم دبليو (BMW) الفئة الخامسة</h3>
+                    <p class="text-sm text-gray-500 mt-1">تجمع بين الفخامة والأداء الرياضي الراقي</p>
+                    <ul class="text-xs text-gray-600 mt-4 space-y-2">
+                        <li>✔️ ناقل حركة أوتوماتيك</li>
+                        <li>✔️ مقاعد جلدية فاخرة</li>
+                        <li>✔️ نظام ملاحة ذكي</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-gray-50 border-t border-gray-100">
+                    <a href="https://wa.me/966536276946?text=مرحباً%20بودجيت%20إشبيلية،%20أرغب%20في%20الاستفسار%20عن%20حجز%20سيارة%20بي%20إم%20دبليو" 
+                       class="block text-center w-full bg-blue-900 hover:bg-blue-950 text-white font-bold py-3 rounded-xl transition text-sm">
+                        احجزها الآن عبر الواتساب
+                    </a>
+                </div>
+            </div>
 
-<section id="contact">
-<h2 data-en="Contact Us" data-ar="اتصل بنا">Contact Us</h2>
-<p>+966 53 627 6946</p>
-<p>2222 Ishiblia 7577, Al Sahaba Rd, Riyadh 13226, Saudi Arabia</p>
-</section>
+            <!-- Car 2: Lexus SUV -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 transition hover:shadow-xl flex flex-col justify-between">
+                <div class="p-6">
+                    <span class="bg-orange-50 text-orange-700 text-xs font-bold px-2.5 py-1 rounded-md">عائلية / SUV فاخرة</span>
+                    <h3 class="text-xl font-bold mt-2 text-gray-900">لكزس (Lexus LX/RX)</h3>
+                    <p class="text-sm text-gray-500 mt-1">الخيار الأمثل للراحة والمساحة الواسعة في التنقل</p>
+                    <ul class="text-xs text-gray-600 mt-4 space-y-2">
+                        <li>✔️ دفع رباعي متميز</li>
+                        <li>✔️ مساحة واسعة ومريحة للعائلات</li>
+                        <li>✔️ تكييف مركزي ممتاز</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-gray-50 border-t border-gray-100">
+                    <a href="https://wa.me/966536276946?text=مرحباً%20بودجيت%20إشبيلية،%20أرغب%20في%20الاستفسار%20عن%20حجز%20سيارة%20لكزس" 
+                       class="block text-center w-full bg-blue-900 hover:bg-blue-950 text-white font-bold py-3 rounded-xl transition text-sm">
+                        احجزها الآن عبر الواتساب
+                    </a>
+                </div>
+            </div>
 
-<footer>
-<p>© Budget Saudi Arabia</p>
-</footer>
+            <!-- Car 3: Mini Cooper -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 transition hover:shadow-xl flex flex-col justify-between">
+                <div class="p-6">
+                    <span class="bg-purple-50 text-purple-700 text-xs font-bold px-2.5 py-1 rounded-md">شبابية / كابريو</span>
+                    <h3 class="text-xl font-bold mt-2 text-gray-900">ميني كوبر كابريو (Mini Cooper)</h3>
+                    <p class="text-sm text-gray-500 mt-1">سيارة شبابية مكشوفة مثالية للأجواء المميزة</p>
+                    <ul class="text-xs text-gray-600 mt-4 space-y-2">
+                        <li>✔️ سقف قابل للكشف</li>
+                        <li>✔️ مظهر عصري وجذاب</li>
+                        <li>✔️ سهولة في التحكم والمواقف</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-gray-50 border-t border-gray-100">
+                    <a href="https://wa.me/966536276946?text=مرحباً%20بودجيت%20إشبيلية،%20أرغب%20في%20الاستفسار%20عن%20حجز%20سيارة%20ميني%20كوبر" 
+                       class="block text-center w-full bg-blue-900 hover:bg-blue-950 text-white font-bold py-3 rounded-xl transition text-sm">
+                        احجزها الآن عبر الواتساب
+                    </a>
+                </div>
+            </div>
 
-<a class="whatsapp" href="https://wa.me/966536276946">WhatsApp</a>
+            <!-- Car 4: Jeep Wrangler -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 transition hover:shadow-xl flex flex-col justify-between">
+                <div class="p-6">
+                    <span class="bg-green-50 text-green-700 text-xs font-bold px-2.5 py-1 rounded-md">دفع رباعي / مغامرات</span>
+                    <h3 class="text-xl font-bold mt-2 text-gray-900">جيب رانجلر (Jeep Wrangler)</h3>
+                    <p class="text-sm text-gray-500 mt-1">سيارة قوية ومثالية لعشاق الطرق الوعرة والمغامرات</p>
+                    <ul class="text-xs text-gray-600 mt-4 space-y-2">
+                        <li>✔️ قدرات دفع رباعي خارقة</li>
+                        <li>✔️ تصميم هجومي وقوي</li>
+                        <li>✔️ مثالية للرحلات البرية</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-gray-50 border-t border-gray-100">
+                    <a href="https://wa.me/966536276946?text=مرحباً%20بودجيت%20إشبيلية،%20أرغب%20في%20الاستفسار%20عن%20حجز%20جيب%20رانجلر" 
+                       class="block text-center w-full bg-blue-900 hover:bg-blue-950 text-white font-bold py-3 rounded-xl transition text-sm">
+                        احجزها الآن عبر الواتساب
+                    </a>
+                </div>
+            </div>
 
-<script>
-let ar=false;
-function toggleLang(){
-ar=!ar;
-document.documentElement.dir=ar?'rtl':'ltr';
-document.querySelectorAll('[data-en]').forEach(el=>{
-el.innerText=ar?el.dataset.ar:el.dataset.en;
-});
-}
-</script>
+            <!-- Car 5: Toyota Cruiser -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-gray-100 transition hover:shadow-xl flex flex-col justify-between">
+                <div class="p-6">
+                    <span class="bg-amber-50 text-amber-700 text-xs font-bold px-2.5 py-1 rounded-md">اعتمادية / SUV</span>
+                    <h3 class="text-xl font-bold mt-2 text-gray-900">تويوتا لاند كروزر برادو</h3>
+                    <p class="text-sm text-gray-500 mt-1">السيارة الأكثر اعتمادية وقوة وتكيفاً مع كافة الأجواء</p>
+                    <ul class="text-xs text-gray-600 mt-4 space-y-2">
+                        <li>✔️ تكييف قوي جداً</li>
+                        <li>✔️ متانة واعتمادية عالية</li>
+                        <li>✔️ مساحة تخزين واسعة</li>
+                    </ul>
+                </div>
+                <div class="p-6 bg-gray-50 border-t border-gray-100">
+                    <a href="https://wa.me/966536276946?text=مرحباً%20بودجيت%20إشبيلية،%20أرغب%20في%20الاستفسار%20عن%20حجز%20تويوتا%20لاند%20كروزر" 
+                       class="block text-center w-full bg-blue-900 hover:bg-blue-950 text-white font-bold py-3 rounded-xl transition text-sm">
+                        احجزها الآن عبر الواتساب
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Location Section -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <h3 class="text-white text-lg font-bold mb-4">فرع ميزانية الصحابة (حي إشبيلية)</h3>
+                <p class="text-sm leading-relaxed mb-4">نحن نقدم أفضل حلول تأجير السيارات الفاخرة والاقتصادية في مدينة الرياض بأعلى معايير الجودة العالمية لشركة Budget العالمية.</p>
+                <p class="text-sm text-gray-300">📍 طريق الصحابة، حي إشبيلية، الرياض، المملكة العربية السعودية.</p>
+                <p class="text-sm text-gray-300 mt-2">📞 هاتف: <span dir="ltr">+966 53 627 6946</span></p>
+            </div>
+            <div class="flex flex-col justify-end items-start md:items-end">
+                <span class="text-xs text-gray-500">© 2026 جميع الحقوق محفوظة لفرع بودجيت إشبيلية.</span>
+                <span class="text-xs text-gray-600 mt-1">تم التطوير بواسطة Digicorex</span>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
